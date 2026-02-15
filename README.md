@@ -7,7 +7,7 @@ Registers sensors for a user and hashes their secrets before storage.
 
 ## Configuration
 
-`.env`
+Create `.env` from `.env.example`:
 ```
 PORT=3006
 DATA_ADAPTER_URL=http://localhost:3001
@@ -32,6 +32,10 @@ Service health check.
 
 - Secrets are hashed with bcrypt before storage.
 - The returned `sensorId` is used by sensors when posting measurements.
+
+## Capabilities
+- Registers sensors for a user
+- Hashes sensor secrets before persisting
 
 ## Run
 ```
