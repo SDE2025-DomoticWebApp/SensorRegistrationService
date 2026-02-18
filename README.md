@@ -28,6 +28,27 @@ Response:
 ### `GET /health`
 Service health check.
 
+
+## JSON Examples
+
+### `POST /register-sensor`
+Request:
+```json
+{
+  "userEmail": "user@example.com",
+  "type": "temperature",
+  "name": "Living Room",
+  "secret": "mysecret123"
+}
+```
+
+Response:
+```json
+{
+  "sensorId": 1
+}
+```
+
 ## Notes
 
 - Secrets are hashed with bcrypt before storage.
